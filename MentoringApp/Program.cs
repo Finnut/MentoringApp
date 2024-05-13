@@ -6,5 +6,4 @@ var app = builder.Build();
 var cruds = new CRUDOperations();
 
 cruds.MapEndpoints(app);
-
 app.Run();

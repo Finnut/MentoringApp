@@ -1,0 +1,42 @@
+﻿@MentoringApp_HostAddress = https://localhost:44395
+
+POST {{MentoringApp_HostAddress}}/
+Content-Type: application/json
+
+{
+  "Id":"2137",
+  "Name":"Data downloader",
+  "Description": "Add documentation",
+  "YoutrackId": "ID-21"
+}
+###
+POST {{MentoringApp_HostAddress}}/
+Content-Type: application/json
+
+{
+  "Id":"1100",
+  "Name":"Data uploader",
+  "Description": null,
+  "YoutrackId": "ID-2253"
+}
+###
+
+PUT {{MentoringApp_HostAddress}}/2137
+Content-Type: application/json
+
+{
+  "Name":"Data srata"
+}
+###
+
+DELETE {{MentoringApp_HostAddress}}/2137
+
+###
+
+GET {{MentoringApp_HostAddress}}/
+
+###
+
+GET {{MentoringApp_HostAddress}}/2137
+
+###
